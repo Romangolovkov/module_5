@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погружение в верстку</title>
+    <meta name="description" content="Описание сайта">
+    <meta name="keywords" content="ключевые, слова, сайта">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+
+    <!--OG tags-->
+    <meta name="og:title" content="Погружение в верстку">
+    <meta name="og:description" content="описание сайта">
+    <meta name="og:type" content="article">
+    <meta name="og:description" content="описание сайта">
+    <meta name="og:image" content="https://screenshot.png">
+    <meta name="og:site_name" content="TEST">
+
+    <!--Additinal OG tags-->
+    <meta name="og:email" content="me@example.com"/>
+    <meta name="og:phone_number" content="650-123-4567"/>
+    <meta name="og:fax_number" content="+1-415-123-4567"/>
+    <meta name="og:latitude" content="37.416343"/>
+    <meta name="og:longitude" content="-122.153013"/>
+    <meta name="og:street-address" content="1601 S California Ave"/>
+    <meta name="og:locality" content="Palo Alto"/>
+    <meta name="og:region" content="CA"/>
+    <meta name="og:postal-code" content="94304"/>
+    <meta name="og:country-name" content="USA"/>
+    <meta property="og:type" content="game.achievement"/>
+    <meta property="og:points" content="POINTS_FOR_ACHIEVEMENT"/>    
+    <meta property="og:video:height" content="640" />
+    <meta property="og:video:width" content="385" />
+    <meta property="og:video:type" content="application/x-shockwave-flash" />    
+    <meta property="og:video:type" content="video/mp4" />    
+    <meta property="og:video:type" content="text/html" />    
+    <meta property="og:audio:title" content="Amazing Song" />
+    <meta property="og:audio:artist" content="Amazing Band" />
+    <meta property="og:audio:album" content="Amazing Album" />
+    <meta property="og:audio:type" content="application/mp3" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- JS -->
+    <script src="js/main.js" defer></script>
+
+</head>
+<body>
+    <header class="header-section">
+        <div class="container">
+
+        </div>
+    </header>
+    <section class="table-section">
+        <div class="container">
+            <table class="table">
+                <tr>
+                    <th>скиллы</th>
+                    <th>задачи</th>
+                    <th>мотивация</th>
+                    <th>отдых</th>
+                </tr>
+                <tr>
+                    <td>HTML5</td>
+                    <td>Соблюдать дедлайны</td>
+                    <td>Новая профессия</td>
+                    <td>Фильм "The Social Networking"</td>
+                </tr>
+                <tr>
+                    <td>CSS3</td>
+                    <td>Практика и еще раз практика</td>
+                    <td>Независимость</td>
+                    <td>Фильм "Ex Machina"</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Помогать команде</td>
+                    <td>Свобода</td>
+                    <td>Серия фильмов "The Matrix"</td>
+                </tr>
+
+
+            </table>
+
+        </div>
+    </section>
+    <section class="video-section">
+        <div class="container">
+            <video width="400" height="300" controls="controls" poster="video/duel.jpg" autoplay loop>                
+                <source src="video/duel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4xDzrJKXOOY?si=lyr7yJwwdDH9Nim-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+    </section>
+    <section class="form-section">
+        <div class="container">
+            <form action="https://webhook.site/3c53faad-8243-454b-92be-cc027a1f8a92" method="POST" class="form">
+                <label for="name">Имя</label>
+                <input type="text" name="name" placeholder="Введите Ваше имя" id="name">
+
+                <label for="phone">телефон</label>
+                <input type="tel" name="phone" placeholder="Введите Ваш номер" id="phone">
+
+
+                <label for="desc">Опишите свою задачу</label>
+                <textarea name="description" id="desc" cols="30" rows="10"></textarea>
+                
+                <input type="checkbox" name="answer1" id="answer1" value="answer1">
+                <label for="answer1">Выбрать первый вариант</label>
+                
+                <input type="checkbox" name="answer2" id="answer2" value="answer2">
+                <label for="answer2">Выбрать второй вариант</label>
+
+                <input type="radio" name="radio" id="radio1" value="radio1">
+                <label for="radio1">Выбрать радио1</label>
+
+                <input type="radio" name="radio" id="radio2" value="radio2">
+                <label for="radio2">Выбрать радио2</label>
+
+                <input type="submit" value="Отправить">
+            </form>
+
+        </div>
+    </section>
+    <footer class="footer-section">
+        <div class="container">
+
+        </div>
+    </footer>
+    
+</body>
+</html>
