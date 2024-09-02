@@ -1,0 +1,211 @@
+/*specification*/
+
+.body{    
+    font-family: "Promt", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #000000;
+    background: #FFF6EF;     
+}
+
+li{
+    list-style: none;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/*header*/
+
+.header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.logo{    
+    width: 32px;
+    height: 32px;
+    display: block;
+    background: url("../img/logo.png");
+}
+
+.menu-list{
+    display: flex;
+    gap: 70px;    
+    margin: 0px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu-item>a{
+    font-family: "Promt", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: black;
+    text-decoration: none;    
+}
+
+.menu-item:hover{
+    text-decoration: underline;
+}
+
+.btn-progress>button{
+    width: 100%;
+    height: 40px;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #6A9B96;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-progress>button:hover{
+    background-color: #C3D2CB;
+}
+
+/*carousel-section*/
+
+.carousel-section{
+    padding-top: 70px;
+}
+
+.slide{
+    height: 600px;
+}
+
+.slider-wrapper{
+    height: 640px;
+}
+
+.carousel-indicators{
+    top: 620px;
+}
+
+.carousel .carousel-indicators [data-bs-target]{
+    width: 13px;
+    height: 16px;
+    margin-right: 16px;
+    background-color: #6A9B96;
+}
+
+/*modal-tabs-section*/
+
+.modal-tabs-title{
+    margin-bottom: 75px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+div.modal-dialog{    
+    max-width: 30.761719%;
+    height: 350px;    
+}
+
+div.modal-header{
+    border-bottom: none;
+}
+
+h5.modal-title{
+    padding: 0 0 0 209px;
+    font-size: 30px;    
+}
+
+div.modal-body{
+    padding: 58px 135px 85px 135px;
+}
+
+.btn-modal > .btn{    
+    width: 100%;
+    height: 100px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #000000;
+    background: #FBDCC7;
+    border: none;        
+    border-radius: 20px;
+}
+
+.btn-modal > .btn:hover{
+    color:#000000;
+    background: #f8c19d;
+}
+
+.modal-tabs-section{
+    padding-top: 120px;
+}
+
+.nav-link{    
+    width: 139px;
+    height: 50px;       
+}
+
+li.nav-item > a.nav-link.active{
+    background-color: #6A9B96;
+    border-radius: 20px 20px 0px 0px;
+    border-color: #6A9B96;
+}
+
+a.nav-link{
+    padding-top: 14px;
+    text-align: center;    
+    color: #000000;
+}
+
+.tab-pane{
+    width: 100%;
+    height: 198px;
+    background: #C3D2CB;
+    border-radius: 0 0 20px 20px;
+}
+
+.tab-text{        
+    padding: 58px 275px 56px 34px;
+}
+
+.tab-text > span{
+    font-weight: 600;
+}
+
+/*accordion-section*/
+
+.accordion-title{
+    margin-bottom: 92px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.accordion-section{
+    padding-top: 120px;
+}
+
+.accordion-body{
+    height: 142px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.064em;
+}
+
+button.accordion-button.accordion-btn{
+    color: #000000;
+    font-weight: 400;
+    background: #FBDCC7;             
+}
+
+button.accordion-btn:hover{
+    font-weight: 600;
+    color: #052c65;
+}
+
+/*footer*/
+
+.footer{
+    margin-top: 120px;
+    padding: 25px 0;
+}

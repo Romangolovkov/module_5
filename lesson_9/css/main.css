@@ -1,0 +1,81 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Tahoma, sans-serif;
+    font-size: 17px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.item:first-child{
+    color: red;
+}
+
+.item:only-child{
+    color: green;
+}
+.item:last-child{
+    margin-bottom: 0;
+}
+.item{
+    margin-bottom: 20px;
+}
+.item:nth-child(odd){
+    font-size: 25px;
+}
+div.item:nth-of-type(odd){
+    color: blueviolet;
+}
+div.item:not(:last-of-type){
+    color: green;
+}
+
+/*.item:hover{
+    border: 1px solid red;
+}*/
+.item:active{
+    border: 1px solid red;
+}
+
+/*.item:focus{
+    outline: none;
+    border: 1px solid pink;
+}*/
+
+.item:valid{
+    outline: none;
+    border: 1px solid green;
+}
+
+.item:invalid{
+    outline: none;
+    border: 1px solid red;
+}
+
+.link:visited{
+    color: blueviolet;
+}
+
+.item{
+    position: relative;
+}
+.item::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: red;
+    position: absolute;
+    right: 0;
+}
+
+.item::first-line{
+    font-size: 40px;
+}
+
+.item::first-letter{
+    color: red;
+}

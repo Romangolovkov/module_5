@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Homework</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <script src="js/bootstrap/bootstrap.js"></script>
+</head>
+<body class="body">
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-xl-1">
+                    <a href="#" class="logo"></a>
+                </div>
+                <div class="col-xl-4 menu">
+                  <nav class="menu-nav">
+                    <ul class="menu-list">
+                        <li class="menu-item"><a href="#carousel-section">Carousel</a></li>
+                        <li class="menu-item"><a href="#modal-tabs-section">Modal&Tabs</a></li>
+                        <li class="menu-item"><a href="#accordion-section">Accordion</a></li>                        
+                    </ul>
+                  </nav>
+                </div>
+                <div class="col-xl-2 btn-progress">
+                    <button class="btn btn-primary button">Progress</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="carousel-section" id="carousel-section">
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner slider-wrapper">
+                  <div class="carousel-item active">
+                    <img src="img/carousel.png" class="d-block w-100 slide" alt="slide1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/slide2.png" class="d-block w-100 slide" alt="slide2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/slide3.png" class="d-block w-100 slide" alt="slide3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/slide4.png" class="d-block w-100 slide" alt="slide4">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </section>
+    <section class="modal-tabs-section" id="modal-tabs-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <h1 class="modal-tabs-title">Modal and Tabs</h1>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-xl-5 btn-modal">
+            <button class="btn btn-primary button" data-bs-toggle="modal" data-bs-target="#modal">Vertically centered modal</button>
+            <div class="modal" id="modal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Modal window</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Welcome to the Bootstrap Showcase! We are thrilled to present to you the power and versatility of Bootstrap - the leading front-end framework for web development. With Bootstrap, creating stunning and responsive websites has never been easier.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>            
+          </div>
+          <div class="col-xl-7">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#Bootstrap">Bootstrap</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#Modals">Modals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#Tabs">Tabs</a>
+              </li>              
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active tab-text" id="Bootstrap">
+                <span>Bootstrap</span> is a powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.
+              </div>
+              <div class="tab-pane fade tab-text" id="Modals">
+                <span>Modals</span> are built with HTML, CSS, and JavaScript. They’re positioned over everything else in the document and remove scroll from the <body> so that modal content scrolls instead.
+              </div>
+              <div class="tab-pane fade tab-text" id="Tabs">
+                <span>Tabs</span> refer to small clickable or touchable elements in a graphical user interface (GUI) that allow users to navigate between different sections or pages within an application or a website.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="accordion-section" id="accordion-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <h1 class="accordion-title">Accordion</h1>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-7 accord">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button accordion-btn first" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    Accordion item 1 - HTML
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                  <div class="accordion-body">
+                    HTML is the foundation of frontend development. It provides the structure and content of web pages, allowing developers to define elements such as headings, paragraphs, images, links, and more. With HTML5, the latest version of the language, exciting new features like semantic <br>elements and multimedia support have been introduced, making it even more powerful for <br>creating modern web applications.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button accordion-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    Accordion item 2 - CSS
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    CSS is responsible for the presentation and styling of web pages. It enables developers to control the layout, colors, fonts, and overall appearance of the content defined in HTML. With CSS3, advanced features like animations, transitions, and responsive design can be implemented, ensuring a visually appealing and interactive user experience across various devices.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item last">
+                <h2 class="accordion-header">
+                  <button class="accordion-button accordion-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Accordion item 3 - JavaScript
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    JavaScript is a versatile programming language that brings interactivity and dynamic functionality to frontend development. With JavaScript, developers can add event handling, perform DOM manipulation, and create complex interactions, making web pages more engaging and user-<br>friendly. Additionally, frameworks like React, Angular, and Vue.js have gained popularity, simplifying the development of interactive and scalable frontend applications.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-auto">
+                  <p>Bootstrap Practice</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+</body>
+</html>
