@@ -8,6 +8,11 @@
     background: #FFF6EF;     
 }
 
+div.container{
+    width: 1110px;
+    padding: 0;
+}
+
 li{
     list-style: none;
 }
@@ -95,6 +100,26 @@ h1{
     background-color: #6A9B96;
 }
 
+span.carousel-control{    
+    width: 100px;
+    height: 100px;
+    
+}
+
+button.carousel-control-prev{
+    display: flex;    
+    justify-content: start;
+    opacity: 1;
+    
+
+}
+
+button.carousel-control-next{
+    display: flex;    
+    justify-content: end;
+    opacity: 1;   
+}
+
 /*modal-tabs-section*/
 
 .modal-tabs-title{
@@ -104,7 +129,7 @@ h1{
 }
 
 div.modal-dialog{    
-    max-width: 30.761719%;
+    max-width: 630px;
     height: 350px;    
 }
 
@@ -119,6 +144,10 @@ h5.modal-title{
 
 div.modal-body{
     padding: 58px 135px 85px 135px;
+}
+
+.btn-modal{
+    width: 446px;
 }
 
 .btn-modal > .btn{    
@@ -158,6 +187,10 @@ a.nav-link{
     color: #000000;
 }
 
+.tab-content{
+    width: 635px;
+}
+
 .tab-pane{
     width: 100%;
     height: 198px;
@@ -166,7 +199,8 @@ a.nav-link{
 }
 
 .tab-text{        
-    padding: 58px 275px 56px 34px;
+    padding: 58px 116px 56px 34px;
+    letter-spacing: 0.048em;
 }
 
 .tab-text > span{
@@ -185,17 +219,35 @@ a.nav-link{
     padding-top: 120px;
 }
 
+.accordion-wrapper{
+    padding: 13px;
+}
+
+.accordion-item{
+    border: 0;    
+}
+
+h2.accordion-header{
+    height: 50px;    
+}
+
 .accordion-body{
     height: 142px;
     font-size: 14px;
     font-weight: 300;
-    letter-spacing: 0.064em;
+    letter-spacing: 0.0545em;
+}
+
+.accordion-item{
+    border-radius: 20px;
 }
 
 button.accordion-button.accordion-btn{
     color: #000000;
     font-weight: 400;
-    background: #FBDCC7;             
+    background: #FBDCC7;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;        
 }
 
 button.accordion-btn:hover{
