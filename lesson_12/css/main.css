@@ -101,17 +101,15 @@ h1{
 }
 
 span.carousel-control{    
-    width: 100px;
-    height: 100px;
-    
+    width: 50px;
+    height: 50px;
+    margin: 20px;
 }
 
 button.carousel-control-prev{
     display: flex;    
     justify-content: start;
     opacity: 1;
-    
-
 }
 
 button.carousel-control-next{
@@ -128,22 +126,40 @@ button.carousel-control-next{
     font-weight: 300;
 }
 
-div.modal-dialog{    
+.modal-dialog{    
     max-width: 630px;
-    height: 350px;    
+    height: 350px;     
 }
 
-div.modal-header{
+.modal-content{
+    border-radius: 20px;
+}
+
+.modal-header{
     border-bottom: none;
 }
 
 h5.modal-title{
-    padding: 0 0 0 209px;
-    font-size: 30px;    
+    padding: 40px 0 0 209px;
+    font-family: "Promt", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
 }
 
-div.modal-body{
-    padding: 58px 135px 85px 135px;
+.modal-body{
+    font-family: "Promt", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 38px 135px 65px 135px;
+}
+
+.modal-header button.btn-close{
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    margin-top: -40px;
+    margin-right: 0;
+    --bs-btn-close-color: #6A9B96;
 }
 
 .btn-modal{
@@ -246,8 +262,21 @@ button.accordion-button.accordion-btn{
     color: #000000;
     font-weight: 400;
     background: #FBDCC7;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;        
+            
+}
+
+.accordion{
+    --bs-accordion-border-radius: 20px;
+    --bs-accordion-inner-border-radius: 20px;
+}
+
+button.third-btn{
+    border-radius: 0;
+}
+
+button.second-dtn{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 button.accordion-btn:hover{
