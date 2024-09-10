@@ -156,10 +156,10 @@ h5.modal-title{
 .modal-header button.btn-close{
     width: 32px;
     height: 32px;
+    background-size: 24px;
     padding: 0;
     margin-top: -40px;
-    margin-right: 0;
-    --bs-btn-close-color: #6A9B96;
+    margin-right: 0;    
 }
 
 .btn-modal{
